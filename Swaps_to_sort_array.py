@@ -9,8 +9,8 @@ from time import time
     the array in ascending order.
 """
 
-def minimumSwap(arr):
-    start = time()
+
+def minimum_swap(arr):
     ref_arr = sorted(arr)
     index_dict = {v: i for i, v in enumerate(arr)}
     swaps = 0
@@ -24,7 +24,6 @@ def minimumSwap(arr):
             index_dict[correct_value] = i
             swaps += 1
 
-    print("--- %s -- seconds" % (time() - start))
     print(swaps)
 
 
@@ -35,4 +34,4 @@ tests = [test_1, test_2, test_3]
 
 
 for test in tests:
-    minimumSwap(test)
+    minimum_swap(test)
