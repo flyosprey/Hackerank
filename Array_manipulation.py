@@ -29,8 +29,6 @@ def array_manipulation(n, queries):
 test_1 = [[1, 2, 100], [2, 5, 100], [3, 4, 100]]  # n = 5
 test_2 = [[1, 5, 3], [4, 8, 7], [6, 9, 1]]  # n = 10
 test_3 = [[2, 6, 8], [3, 5, 7], [1, 8, 1], [5, 9, 15]]  # n = 10
-tests = [test_1, test_2, test_3]
-n_1 = 5
 
-for test in tests:
-    array_manipulation(n_1, test)
+array_manipulation(5, test_1)
+
