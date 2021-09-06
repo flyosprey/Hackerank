@@ -1,4 +1,4 @@
-def findSubstring(s, k):
+def find_substring(s, k):
     vowels = ('a', 'e', 'i', 'o', 'u')
 
     old_counter = 0
@@ -12,13 +12,10 @@ def findSubstring(s, k):
 
         if new_counter < old_counter:
             new_counter = old_counter
-            #view = new
         old_counter = 0
         k += 1
-        # if s[i, i:k] in vowels:
-        #     counter += 1
     if view:
         print('Full')
 
 
-findSubstring('findSubstring', 5)
+find_substring('find_substring', 5)
